@@ -6,13 +6,16 @@ import MapaRiscos from '../screens/MapaRiscos';
 import Alertas from '../screens/Alertas';
 import Comunidade from '../screens/Comunidade';
 import Doacoes from '../screens/Doacoes';
+import LoginScreen from '../screens/LoginScreen';
+
 
 const Stack = createNativeStackNavigator();
 
 export default function AppNavigation() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="TelaInicial" screenOptions={{ headerShown: false }}>
+      <Stack.Navigator initialRouteName="Login"screenOptions={{headerShown: false}}>
+        <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="TelaInicial" component={TelaInicial} />
         <Stack.Screen name="MapaRiscos" component={MapaRiscos} />
         <Stack.Screen name="Alertas" component={Alertas} />
