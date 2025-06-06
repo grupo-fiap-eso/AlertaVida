@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet, TouchableOpacity, ScrollView, Image } from 'react-native';
 import { Ionicons, MaterialIcons, FontAwesome5 } from '@expo/vector-icons';
 
-export default function HomeScreen() {
+export default function TelaInicial() {
   return (
     <ScrollView style={styles.container}>
       {/* Header */}
@@ -74,9 +74,9 @@ const styles = StyleSheet.create({
   header: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 8,
   },
   headerTitle: {
+    marginLeft: 8,
     fontSize: 26,
     color: '#0077B6',
     fontWeight: 'bold',
@@ -122,7 +122,7 @@ const styles = StyleSheet.create({
   },
   alertContainer: {
     flexDirection: 'row',
-    gap: 12,
+    marginLeft: -8,
     marginBottom: 16,
   },
   alertCard: {
@@ -141,7 +141,7 @@ const styles = StyleSheet.create({
   actionsContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    gap: 12,
+    marginLeft: 16,
     marginBottom: 16,
   },
   actionButton: {
