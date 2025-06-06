@@ -1,9 +1,11 @@
+import 'react-native-gesture-handler';
+
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import TelaInicial from './screens/TelaInicial';
-import TabNavigation from './navigation/TabNavigation';
+import TelaInicial from './src/screens/TelaInicial';
+import TabNavigation from './src/navigation/TabNavigation';
 
 const Stack = createNativeStackNavigator();
 
